@@ -1,0 +1,20 @@
+#!/usr/bin/install-menu
+# Generates CDE menus for all registered applications.
+
+compat="menu-1"
+outputencoding="LOCALE" 
+
+!include menu.h
+
+genmenu="debian.dtwmrc"
+rootprefix="/usr/dt/"
+userprefix=".dt/"
+treewalk=c(m)
+
+supported
+	x11="\""$title "\" f.exec \"" $command "\" \n "
+endsupported
+
+startmenu="\nMenu "$title"\n{\n\"" $title "\" f.title\n"
+endmenu="}\n"
+submenutitle="\""$title "\" f.menu " $title "\n" 

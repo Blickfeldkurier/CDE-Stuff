@@ -1,0 +1,15 @@
+This repository contains various stuff for CDE.
+
+- menu-methods:
+	This script generates CDE menus on debian based systems.
+	Installation: Drop this script in /etc/menu-methods/.
+	When update-menus is called a debian.dtwmrc file is 
+	generated in /usr/dt or ~/.dt/. This can be included in
+	your ~/.dt/dtwmrc file by using something like:
+		Include
+		{
+			/usr/dt/debian.dtwmrc
+		}
+	Then you can add this menu to the DtRootMenu by adding:
+	"Debian"				f.menu Debian
+	to it.
