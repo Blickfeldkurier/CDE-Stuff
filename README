@@ -11,5 +11,10 @@ This repository contains various stuff for CDE.
 			/usr/dt/debian.dtwmrc
 		}
 	Then you can add this menu to the DtRootMenu by adding:
-	"Debian"				f.menu Debian
+	"Debian"	f.menu Debian
 	to it.
+
+- xession:
+	Files for running CDE with GDM/Lightdm.
+	Copy startxsession.sh to /usr/dt/bin and cde.desktop  
+	to /usr/share/xsessions/.
