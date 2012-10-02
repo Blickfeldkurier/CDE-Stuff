@@ -40,7 +40,7 @@ Menu DtRootMenu
 	"Workspace Menu"			f.title
     "Run Programm"			f.exec "gmrun"
 	"Terminal"				f.exec "dtterm"
-	"Log Screen"			f.exec "/usr/bin/i3lock -t -i ~/Bilder/wallpapers/tardis.png"
+	"Lock Screen"			f.exec "/usr/bin/i3lock -t -i ~/Bilder/wallpapers/tardis.png"
 	 no-label				f.separator
 	"Debian"				f.menu Debian
 	 no-label				f.separator
